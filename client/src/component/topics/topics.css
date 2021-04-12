@@ -1,0 +1,22 @@
+.topics-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 4rem;
+    max-width: 1200px;
+
+}
+
+.topics-container div {
+    background-color: var(--off-white);
+    width: 200px;
+    margin: 2rem;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+
+

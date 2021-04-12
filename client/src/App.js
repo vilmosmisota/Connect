@@ -3,10 +3,11 @@ import './App.css';
 import {BrowserRouter, Switch, Route, Redirect} from 'react-router-dom';
 
 ///components
-import Dashboard from './component/Dashboard';
-import Login from './component/Login';
-import Register from './component/Register';
-
+// import Dashboard from './component/dashboard/Dashboard';
+import Login from './component/login/Login';
+import Register from './component/register/Register';
+import { Header } from './component/header/Header';
+import { HomePage } from './pages/homePage/HomePage';
 
 function App() {
 
@@ -40,6 +41,11 @@ function App() {
 
   return (
     <Fragment>
+      <Header />
+      <HomePage />
+
+
+
       <BrowserRouter>
         <div className="container">
           <Switch>
@@ -54,10 +60,10 @@ function App() {
               path="/register"
               render={props => !isAuthenticated ? ( <Register {...props} setAuth={setAuth} /> ) :  ( <Redirect to="/dashboard"/> ) } />
             
-            <Route
+            {/* <Route
               exact
               path="/dashboard"
-              render={props => isAuthenticated ? ( <Dashboard {...props} setAuth={setAuth} /> ) : ( <Redirect to="/login"/> ) } />
+              render={props => isAuthenticated ? ( <Dashboard {...props} setAuth={setAuth} /> ) : ( <Redirect to="/login"/> ) } /> */}
 
           </Switch>
         </div>
