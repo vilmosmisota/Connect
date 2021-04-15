@@ -13,7 +13,7 @@ router.get("/", authorization, async (req, res) => {
         console.error(error.message)
         res.status(500).json('Server Error')
     }
-})
+})  
 
 
 

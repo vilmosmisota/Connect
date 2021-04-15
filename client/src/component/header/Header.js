@@ -1,12 +1,13 @@
 import React from 'react';
 import './header.css';
 
-import Dashboard from '../dashboard/Dashboard'
+import Dashboard from './Dashboard'
 
 export const Header = () => {
+    
+
+
     return (
-        
-            
             <nav>
                 <div className="logo">
                     <p>CONNECT</p>

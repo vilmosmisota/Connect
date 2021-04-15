@@ -10,11 +10,13 @@ app.use(cors());            //backend frontend
 
 
 //routes
-
 app.use('/auth', require('./src/routes/jwtAuth'));
 
 //dashboard
 app.use('/dashboard', require('./src/routes/dashboard'));
+
+// //billboard
+// app.use('/billboard', )
 
 
 //listening port
