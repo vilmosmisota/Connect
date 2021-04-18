@@ -12,45 +12,22 @@ import { useDispatch, useSelector } from "react-redux";
 import { loadUser } from "./redux/actions/authActions";
 
 const App = () => {
-  const Auth = useSelector((state) => state.auth);
+  const Auth = useSelector((state) => state.auth.isAuthenticated);
   const dispatch = useDispatch();
 
+
   useEffect(() => {
-    dispatch(loadUser());
-  }, []);
+    if (Auth === true) {
+      dispatch(loadUser());
+    }
+  }, [Auth]);
 
-  // const [isAuthenticated, setIsAuthenticated] = useState(false);
-
-  // const setAuth = (boolen) => {
-  // setIsAuthenticated(boolen);
-  // }
-
-  // async function isAuth () {
-  //   try {
-
-  //     const response = await fetch("http://localhost:3001/auth/is-verify", {
-  //       method: "GET",
-  //       headers: {token: localStorage.token}
-  //     })
-
-  //     const parseRes = await response.json();
-  //     console.log(parseRes)
-
-  //     parseRes === true ? setIsAuthenticated(true) : setIsAuthenticated(false);
-
-  //   } catch (error) {
-  //     console.error(error.message)
-  //   }
-  // }
-
-  // useEffect(()=>{
-  //   isAuth()
-  // })
-
+  console.log(Auth);
   return (
     <Fragment>
       <Header />
       <HomePage />
+
       <Login />
       <Register />
       <Logout />

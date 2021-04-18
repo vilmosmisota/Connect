@@ -1,7 +1,10 @@
-import React, { Fragment, useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { login } from "../../redux/actions/authActions";
 
-const Login = ({ setAuth }) => {
+const Login = () => {
+  const Auth = useSelector((state) => state.auth);
+  const dispatch = useDispatch();
   const [inputs, setInputs] = useState({
     email: "",
     password: "",
@@ -12,30 +15,13 @@ const Login = ({ setAuth }) => {
     setInputs({ ...inputs, [e.target.name]: e.target.value });
   };
 
-  const onSubmitForm = async (e) => {
+  const onSubmitForm = (e) => {
     e.preventDefault();
-
-    try {
-      const body = { email, password };
-
-      const response = await fetch("http://localhost:3001/auth/login", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(body),
-      });
-
-      const parseRes = await response.json();
-
-      localStorage.setItem("token", parseRes.token);
-
-      setAuth(true);
-    } catch (error) {
-      console.error(error.message);
-    }
+    dispatch(login(inputs));
   };
 
   return (
-    <Fragment>
+    <section>
       <h1>Login</h1>
       <form onSubmit={onSubmitForm}>
         <input
@@ -54,8 +40,7 @@ const Login = ({ setAuth }) => {
         />
         <button>Submit</button>
       </form>
-      {/* <Link to="/register">Register</Link> */}
-    </Fragment>
+    </section>
   );
 };
 

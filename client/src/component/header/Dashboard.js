@@ -1,34 +1,17 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import "./dashboard.css";
+import { loadUser } from "../../redux/actions/authActions";
 
 const Dashboard = () => {
-  // const [name, setName] = useState("");
-
-  // async function getName() {
-  //     try {
-
-  //         const response = await fetch("http://localhost:3001/dashboard/", {
-  //             method: "GET",
-  //             headers: {token: localStorage.token}
-  //         })
-
-  //         const parseRes = await response.json();
-
-  //         setName(parseRes.user_name)
-  //     } catch (error) {
-  //         console.error(error.message)
-  //     }
-  // }
-
-  // // // const logout = (e) => {
-  // // //     e.preventDefault();
-  // // //     localStorage.removeItem("token")
-  // // //     setAuth(false);
-  // // }
+  const Auth = useSelector((state) => state.auth);
+  const dispatch = useDispatch();
 
   // useEffect(() => {
-  //     getName()
+  //   dispatch(loadUser());
   // }, []);
+
+  // console.log(Auth);
 
   return (
     <section className="dashboard">
