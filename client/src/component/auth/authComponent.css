@@ -1,0 +1,54 @@
+.auth-container {
+  font-family: "Playfair Display SC", serif;
+  position: absolute;
+  top: 0;
+  background-color: var(--light-beige);
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+  padding: 0.5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-header {
+  width: 85vw;
+  line-height: 2rem;
+}
+
+.auth-header h1 {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.auth-header h1 span {
+  color: var(--red);
+}
+
+.have-account {
+  text-align: center;
+  font-family: "Fira Mono", monospace;
+}
+
+.have-account button {
+  cursor: pointer;
+  text-decoration-line: underline;
+  border: none;
+  background-color: transparent;
+  color: var(--red);
+  font-size: 1.1rem;
+  letter-spacing: 0.1rem;
+  padding: 0 0.5rem;
+}
+
+@media (min-width: 950px) {
+  .auth-header {
+    width: 800px;
+  }
+
+  .auth-header h1 {
+    font-size: 2rem;
+  }
+}

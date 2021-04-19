@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { login } from "../../redux/actions/authActions";
+import { login } from "../../../redux/actions/authActions";
 
 const Login = () => {
   const Auth = useSelector((state) => state.auth);
@@ -21,24 +21,23 @@ const Login = () => {
   };
 
   return (
-    <section>
-      <h1>Login</h1>
+    <section className="auth-form-container">
       <form onSubmit={onSubmitForm}>
         <input
           type="email"
           name="email"
-          placeholder="email"
+          placeholder="Email"
           value={email}
           onChange={(e) => onChange(e)}
         />
         <input
           type="password"
           name="password"
-          placeholder="password"
+          placeholder="Password"
           value={password}
           onChange={(e) => onChange(e)}
         />
-        <button>Submit</button>
+        <button>LOGIN</button>
       </form>
     </section>
   );

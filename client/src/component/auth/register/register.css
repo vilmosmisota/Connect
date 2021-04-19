@@ -1,0 +1,26 @@
+.auth-form-container {
+  /* height: 50vh; */
+  width: 200px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.auth-form-container input {
+  font-family: "Fira Mono", monospace;
+  margin: 0.5rem;
+  border: none;
+  border-radius: 50px;
+  background-color: var(--off-white);
+  padding: 0.5rem;
+}
+
+.auth-form-container button {
+  cursor: pointer;
+  font-family: "Playfair Display SC", serif;
+  border-radius: 50px;
+  border: none;
+  background-color: var(--orange);
+  padding: 0.2rem 1rem;
+  margin-top: 1.5rem;
+}

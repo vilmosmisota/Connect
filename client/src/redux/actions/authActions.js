@@ -17,7 +17,7 @@ export const loadUser = () => (dispatch, getState) => {
   dispatch({ type: USER_LOADING });
 
   axios
-    .get("http://localhost:3001/dashboard/", tokenConfig(getState))
+    .get("http://localhost:3001/profile/", tokenConfig(getState))
     .then((res) =>
       dispatch({
         type: USER_LOADED,

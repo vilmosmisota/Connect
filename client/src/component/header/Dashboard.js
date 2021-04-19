@@ -1,18 +1,7 @@
-import React, { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import React from "react";
 import "./dashboard.css";
-import { loadUser } from "../../redux/actions/authActions";
 
 const Dashboard = () => {
-  const Auth = useSelector((state) => state.auth);
-  const dispatch = useDispatch();
-
-  // useEffect(() => {
-  //   dispatch(loadUser());
-  // }, []);
-
-  // console.log(Auth);
-
   return (
     <section className="dashboard">
       <div className="post-icon">

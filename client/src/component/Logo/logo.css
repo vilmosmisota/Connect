@@ -1,0 +1,38 @@
+.logo-container {
+  font-size: 25px;
+  font-weight: 700;
+  font-family: "Josefin Sans", sans-serif;
+  letter-spacing: -0.3rem;
+  position: relative;
+  margin: 0 auto;
+}
+
+.N {
+  position: absolute;
+  top: -7px;
+  display: inline-block;
+  color: var(--orange);
+  transform: scale(1, -1);
+}
+
+.Nect {
+  position: absolute;
+  left: 45px;
+}
+
+@media (min-width: 950px) {
+  .logo-container {
+    font-size: 35px;
+    letter-spacing: -0.4rem;
+  }
+
+  .N {
+    position: absolute;
+    top: -8px;
+  }
+
+  .Nect {
+    position: absolute;
+    left: 65px;
+  }
+}

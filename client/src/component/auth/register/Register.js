@@ -1,6 +1,7 @@
 import React, { useState } from "react";
+import "./register.css";
 import { useDispatch } from "react-redux";
-import { register } from "../../redux/actions/authActions";
+import { register } from "../../../redux/actions/authActions";
 
 const Register = () => {
   const dispatch = useDispatch();
@@ -21,31 +22,31 @@ const Register = () => {
   };
 
   return (
-    <section>
-      <h1>REGISTER</h1>
+    <section className="auth-form-container">
       <form onSubmit={onSubmitForm}>
         <input
+          className=""
           type="text"
           name="name"
-          placeholder="name"
+          placeholder="Username"
           value={name}
           onChange={(e) => onChange(e)}
         />
         <input
           type="email"
           name="email"
-          placeholder="email"
+          placeholder="Email"
           value={email}
           onChange={(e) => onChange(e)}
         />
         <input
           type="password"
           name="password"
-          placeholder="password"
+          placeholder="Password"
           value={password}
           onChange={(e) => onChange(e)}
         />
-        <button>Submit</button>
+        <button>JOIN</button>
       </form>
     </section>
   );

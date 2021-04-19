@@ -1,24 +1,23 @@
 :root {
-  --light-beige: #EBE9E3;
-  --off-white: #F5F5F5;
+  --light-beige: #ebe9e3;
+  --off-white: #f5f5f5;
+  --orange: #e9bb74;
+  --red: #e98074;
 }
-
-
 
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
   box-sizing: border-box;
   line-height: 1.6rem;
   background-color: var(--light-beige);
-
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
