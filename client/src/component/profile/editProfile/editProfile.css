@@ -1,0 +1,54 @@
+.edit-profile-page-container {
+  width: 100vw;
+  padding-top: 1.5rem;
+}
+
+.set-up-profile-page-form {
+  width: 80vw;
+  background-color: var(--off-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.set-up-profile-page-form input {
+  width: 80vw;
+  border: none;
+  border-radius: 50px;
+  margin-bottom: 2rem;
+  background-color: var(--light-beige);
+  padding: 0.5rem;
+}
+
+.set-up-profile-page-form label {
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+  margin-left: 0.5rem;
+  font-family: "Fira Mono", monospace;
+}
+
+.edit-profile-page-container button {
+  cursor: pointer;
+  font-family: "Playfair Display SC", serif;
+  border-radius: 50px;
+  border: none;
+  background-color: var(--red);
+  padding: 0.2rem 1rem;
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 650px) {
+  .set-up-profile-page-form {
+    width: 50vw;
+    max-width: 600px;
+  }
+
+  .set-up-profile-page-form input {
+    width: 40vw;
+    max-width: 500px;
+  }
+}

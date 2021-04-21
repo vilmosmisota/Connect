@@ -1,0 +1,35 @@
+.dashboard {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 50vw;
+}
+
+.dashboard div {
+  cursor: pointer;
+  padding: 0.5rem;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.fa-portrait {
+  font-size: 50px;
+  margin-right: 0.8rem;
+  color: black;
+}
+
+.fa-home {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+@media (min-width: 650px) {
+  .dashboard div {
+    padding: 1.5rem;
+    font-size: 25px;
+  }
+
+  .fa-portrait {
+    font-size: 50px;
+    margin-right: 1rem;
+  }
+}

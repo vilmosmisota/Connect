@@ -4,7 +4,9 @@
   font-family: "Josefin Sans", sans-serif;
   letter-spacing: -0.3rem;
   position: relative;
+  padding: 0;
   margin: 0 auto;
+  width: 100px;
 }
 
 .N {
@@ -20,10 +22,11 @@
   left: 45px;
 }
 
-@media (min-width: 950px) {
+@media (min-width: 650px) {
   .logo-container {
     font-size: 35px;
     letter-spacing: -0.4rem;
+    width: 140px;
   }
 
   .N {

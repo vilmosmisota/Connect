@@ -43,7 +43,7 @@ const AuthComponent = () => {
   return (
     <div className="auth-container">
       <section className="auth-header">
-        <div>
+        <div className="auth-logo-container">
           <Logo />
         </div>
         <div>

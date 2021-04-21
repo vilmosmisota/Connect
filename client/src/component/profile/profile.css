@@ -1,0 +1,52 @@
+.profile-page-container {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 90vw;
+  margin: 0 auto;
+  padding-top: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.edit-profile-msg {
+  padding: 1.5rem;
+}
+
+.edit-profile-msg h1 {
+  font-size: 1rem;
+}
+
+.edit-profile-msg p {
+  font-size: 0.8rem;
+}
+
+.edit-profile-container {
+  text-align: right;
+  padding: 1rem;
+  flex-wrap: nowrap;
+  width: 130px;
+}
+
+.edit-profile-container button,
+.edit-profile-msg button {
+  cursor: pointer;
+  font-family: "Fira Mono", monospace;
+  color: rgba(0, 0, 0, 0.7);
+  background-color: transparent;
+  border: none;
+  font-size: 0.8rem;
+  text-decoration-line: underline;
+  padding: 0;
+  margin: 0;
+}
+
+.edit-profile-msg button {
+  color: var(--red);
+}
+
+@media (min-width: 650px) {
+  .edit-profile-container button {
+    font-size: 1.2rem;
+  }
+}

@@ -21,6 +21,7 @@
 
 .auth-header h1 {
   color: rgba(0, 0, 0, 0.7);
+  text-align: center;
 }
 
 .auth-header h1 span {
@@ -43,6 +44,13 @@
   padding: 0 0.5rem;
 }
 
+.auth-details {
+  background-color: var(--off-white);
+  padding: 1.5rem;
+  box-shadow: 5px 5px 10px #888888;
+  margin-top: 1.5rem;
+}
+
 @media (min-width: 950px) {
   .auth-header {
     width: 800px;
@@ -50,5 +58,6 @@
 
   .auth-header h1 {
     font-size: 2rem;
+    line-height: 2.8rem;
   }
 }
